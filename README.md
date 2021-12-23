@@ -15,10 +15,10 @@
 
 - Copy toml Code (e.g. `rand = "0.8.4"`)
 - Open Documentation ❕
-- Opent at crates.io
+- Open at crates.io
 - Open Repository ❕
 
-❕ = if providet at crates.io
+❕ = if provided at crates.io
 
 ### Demo
 
