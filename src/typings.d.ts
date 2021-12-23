@@ -25,8 +25,9 @@ export interface ICreate {
   name: string
   description: string
   version: string
-  downloads: number
-  install: string
-  repo: string
-  documentation: string
+  numberOfDownloads: number
+  installCommand: string
+  urlCratesIo: string
+  urlRepo: ?string
+  urlDocumentation: ?string
 }

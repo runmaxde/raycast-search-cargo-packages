@@ -1,6 +1,6 @@
 {
   "name": "search-cargo-packages",
-  "title": "Search for cargo packages",
+  "title": "Search Cargo Packages",
   "description": "Search for cargo packages at crates.io and receive information about them.",
   "icon": "app-icon.png",
   "author": "runmaxde",
@@ -10,8 +10,15 @@
       "name": "index",
       "title": "Search Cargo Packages",
       "subtitle": "crates.io",
-      "description": "Search for cargo packages at crates.io",
-      "mode": "view"
+      "description": "Goal of this extension is to find cargo packages at crates.io. Afterwards you cane\n- copy the toml command\n- open the specific crates.io page\n- open the external documentation\n\n⚠️ Legal notice:\nThe used Logo is part of the rust-lang.org/cargo.io, learn more about the license at https://www.rust-lang.org/policies/media-guide ",
+      "mode": "view",
+      "keywords": [
+        "cargo",
+        "crates.io",
+        "rust",
+        "packages",
+        "toml"
+      ]
     }
   ],
   "dependencies": {

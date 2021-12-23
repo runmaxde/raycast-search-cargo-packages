@@ -15,10 +15,11 @@ export default async function fetchPackages(searchString: string) {
         name: crate.name,
         description: crate.description,
         version: crate.max_version,
-        downloads: crate.downloads,
-        install: `${crate.name} = "${crate.max_version}"`,
-        repo: crate.repository,
-        documentation: crate.documentation,
+        numberOfDownloads: crate.downloads,
+        installCommand: `${crate.name} = "${crate.max_version}"`,
+        urlCratesIo: `https://crates.io/crates/${crate.name}`,
+        urlRepo: crate.repository,
+        urlDocumentation: crate.documentation,
       }
     })
     return packages as ICreate[]

@@ -1,4 +1,9 @@
-import { List } from '@raycast/api'
+import {
+  ActionPanel,
+  CopyToClipboardAction,
+  List,
+  OpenInBrowserAction,
+} from '@raycast/api'
 import { useState } from 'react'
 import fetchPackages from './fetchPackages'
 import type { ICreate } from './typings'
@@ -33,11 +38,37 @@ export default function PackageList() {
 function PackageItem({ item }: { item: ICreate }) {
   return (
     <List.Item
-      key={item.name}
       id={item.name}
       title={item.name}
       subtitle={item.description}
       accessoryTitle={item.version}
+      actions={
+        <ActionPanel>
+          <CopyToClipboardAction
+            title="Copy toml Command"
+            content={item.installCommand}
+          />
+          {item.urlDocumentation && (
+            <OpenInBrowserAction
+              title="Open Documentation"
+              url={item.urlDocumentation}
+              icon="doc-plaintext-16"
+            />
+          )}
+          <OpenInBrowserAction
+            title="Open at crates.io"
+            url={item.urlCratesIo}
+            icon="link-16"
+          />
+          {item.urlRepo && (
+            <OpenInBrowserAction
+              title="Open Repository"
+              url={item.urlRepo}
+              icon="eye-16"
+            />
+          )}
+        </ActionPanel>
+      }
     />
   )
 }
