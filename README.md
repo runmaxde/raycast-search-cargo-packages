@@ -8,7 +8,7 @@
   <a href="https://choosealicense.com/licenses/mit/">
     <img src="https://img.shields.io/badge/license-MIT-green.svg" />
   </a>
-  <br><br><br>
+  <br/><br/><br/>
 </div>
 
 ### Feature 
@@ -18,8 +18,8 @@
 - Opent at crates.io
 - Open Repository ❕
 
-
 ❕ = if providet at crates.io
 
-
 ### Demo
+
+<img src="https://user-images.githubusercontent.com/41482988/147270717-07673061-7172-46c8-8bdb-3844a45a7339.gif" style="width: 100%;"/>
